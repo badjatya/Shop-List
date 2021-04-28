@@ -6,7 +6,7 @@ const InputContainer = props => (
         <TextInput style={styles.textInput} placeholder="Enter Item..." />
 
         <TouchableOpacity style={styles.buttonContainer}>
-            <Text style={styles.textButton} >+</Text>
+            <Text style={styles.textButton}>+</Text>
         </TouchableOpacity>
     </View>
 )
@@ -16,13 +16,23 @@ const styles = StyleSheet.create({
         paddingHorizontal: 30,
         marginVertical: 10,
         flexDirection:"row",
-
+        alignItems:"center",
+        justifyContent:"space-around",
     },
     textInput :{
         width:"80%",
         paddingTop:15,
         borderBottomColor: "#8ab6d6",
         borderBottomWidth:1,
+    },
+    buttonContainer:{
+        width:40,
+        height:40,
+        borderRadius:40,
+        borderColor: "#8ab6d6",
+        borderWidth:1,
+        justifyContent:"center",
+        alignItems:"center"
     }
 });
 
