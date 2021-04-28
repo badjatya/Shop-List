@@ -5,4 +5,10 @@ const InputContainer = props => (
     <Text >HII</Text>
 )
 
+const styles = StyleSheet.create({
+    container: {},
+});
+
+// Input Container component
+
 export default InputContainer;
