@@ -12,7 +12,10 @@ const InputContainer = props => (
 )
 
 const styles = StyleSheet.create({
-    inputContainer: {},
+    inputContainer: {
+        paddingHorizontal: 30,
+        marginVertical: 10,
+    },
 });
 
 // Input Container component
