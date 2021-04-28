@@ -1,13 +1,11 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import Header from "./components/header.component";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerText}>Shop List</Text>
-      </View>
+      <Header />
     </View>
   );
 }
