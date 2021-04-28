@@ -3,7 +3,11 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native
 
 const InputContainer = props => (
     <View style={styles.inputContainer}>
-        <TextInput style={styles.inputContainer} placeholder="Enter Item..." />
+        <TextInput style={styles.textInput} placeholder="Enter Item..." />
+
+        <TouchableOpacity style={styles.buttonContainer}>
+            <Text style={styles.textButton} >+</Text>
+        </TouchableOpacity>
     </View>
 )
 
