@@ -12,14 +12,4 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {},
-  header: {
-    backgroundColor: "#8ab6d6",
-    padding: 30,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  headerText: {
-    color: "white",
-    fontSize: 22,
-  },
 });
