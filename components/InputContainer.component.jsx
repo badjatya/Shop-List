@@ -15,7 +15,13 @@ const styles = StyleSheet.create({
     inputContainer: {
         paddingHorizontal: 30,
         marginVertical: 10,
+        flexDirection:"row",
+        
     },
+    textInput :{
+        width:"80%",
+        
+    }
 });
 
 // Input Container component
