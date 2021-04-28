@@ -1,12 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native";
 
 const InputContainer = props => (
-    <Text >HII</Text>
+    <View style={styles.inputContainer}>
+        <TextInput style={styles.inputContainer} placeholder="Enter Item..." />
+    </View>
 )
 
 const styles = StyleSheet.create({
-    container: {},
+    inputContainer: {},
 });
 
 // Input Container component
