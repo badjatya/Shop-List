@@ -16,11 +16,13 @@ const styles = StyleSheet.create({
         paddingHorizontal: 30,
         marginVertical: 10,
         flexDirection:"row",
-        
+
     },
     textInput :{
         width:"80%",
-        
+        paddingTop:15,
+        borderBottomColor: "#8ab6d6",
+        borderBottomWidth:1,
     }
 });
 
