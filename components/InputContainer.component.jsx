@@ -33,9 +33,12 @@ const styles = StyleSheet.create({
         borderWidth:1,
         justifyContent:"center",
         alignItems:"center"
+    },
+    textButton:{
+        fontSize:16,
+        fontWeight:"bold",
+        color: "#8ab6d6",
     }
 });
-
-// Input Container component Styles
 
 export default InputContainer;
