@@ -8,16 +8,20 @@ export default function App() {
       <View style={styles.header}>
         <Text style={styles.headerText}>Shop List</Text>
       </View>
-      <StatusBar style="auto" />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  container: {},
+  header: {
     backgroundColor: "#8ab6d6",
-    alignItems: "center",
+    padding: 30,
     justifyContent: "center",
+    alignItems: "center",
+  },
+  headerText: {
+    color: "white",
+    fontSize: 22,
   },
 });
