@@ -36,6 +36,6 @@ const styles = StyleSheet.create({
     }
 });
 
-// Input Container component
+// Input Container component Styles
 
 export default InputContainer;
