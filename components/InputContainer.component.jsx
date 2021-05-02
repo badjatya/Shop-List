@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native
 
 const InputContainer = props => (
     <View style={styles.inputContainer}>
-        <TextInput style={styles.textInput} placeholder="Enter Item..." />
+        <TextInput value={props.inputData} style={styles.textInput} placeholder="Enter Item..." onChangeText={(item) => props.setInputData(item)} />
 
         <TouchableOpacity style={styles.buttonContainer}>
             <Text style={styles.textButton}>+</Text>
