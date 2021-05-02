@@ -6,7 +6,7 @@ const InputContainer = props => (
         <TextInput value={props.inputData} style={styles.textInput} placeholder="Enter Item..." onChangeText={(item) => props.setInputData(item)} />
 
         <TouchableOpacity 
-        onPress={() => props.setLists([...props.lists,props.inputData])} 
+        onPress={() => props.setLists([...props.lists, {key: Math.random(), list: props.inputData}])} 
         style={styles.buttonContainer}>
             <Text style={styles.textButton}>+</Text>
         </TouchableOpacity>

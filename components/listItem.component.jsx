@@ -1,16 +1,16 @@
 import React from "react";
-import { StyleSheet, View , Text, TouchableOpacity} from "react-native";
+import { StyleSheet, ScrollView , Text, TouchableOpacity} from "react-native";
 
 const ListItem = props => (
-    <View style={styles.container}>
+    <ScrollView  style={styles.container}>
         {
             props.lists.map(item => (
                 <TouchableOpacity style={styles.listContainer} key={Math.random()}>
-                    <Text>{item}</Text>
+                    <Text>{item.list}</Text>
                 </TouchableOpacity>
             ))
         }
-    </View>
+    </ScrollView>
 )
 
 const styles = StyleSheet.create({
