@@ -19,7 +19,9 @@ const styles = StyleSheet.create({
         marginTop:20,
     },
     listContainer:{
-
+        borderWidth:1,
+        borderColor:"#8ab6d6",
+        
     }
 });
 
