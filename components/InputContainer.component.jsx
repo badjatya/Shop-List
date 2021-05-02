@@ -1,17 +1,26 @@
 import React from "react";
 import { StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native";
 
-const InputContainer = props => (
+const InputContainer = props => {
+    const addTodo = () => {
+        props.setLists([...props.lists, {key: Math.random(), list: props.inputData}]);
+        props.setInputData("")
+    } 
+    return(
     <View style={styles.inputContainer}>
-        <TextInput value={props.inputData} style={styles.textInput} placeholder="Enter Item..." onChangeText={(item) => props.setInputData(item)} />
+        <TextInput 
+        value={props.inputData} 
+        style={styles.textInput} 
+        placeholder="Enter Item..." 
+        onChangeText={(item) => props.setInputData(item)} />
 
         <TouchableOpacity 
-        onPress={() => props.setLists([...props.lists, {key: Math.random(), list: props.inputData}])} 
+        onPress={() => addTodo()} 
         style={styles.buttonContainer}>
             <Text style={styles.textButton}>+</Text>
         </TouchableOpacity>
     </View>
-)
+)}
 
 const styles = StyleSheet.create({
     inputContainer: {
