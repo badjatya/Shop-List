@@ -11,8 +11,8 @@ const ListItem = props => {
     return(
     <ScrollView  style={styles.container}>
         {
-            props.lists.map(item => (
-                <TouchableOpacity style={styles.listContainer} key={uuid.v4()} onPress={() => deleteTodo(key)}>
+            props.lists.map((item, index) => (
+                <TouchableOpacity style={styles.listContainer} key={index} onPress={() => deleteTodo(index)}>
                     <Text>{item}</Text>
                 </TouchableOpacity>
             ))
