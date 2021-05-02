@@ -19,9 +19,14 @@ const styles = StyleSheet.create({
         marginTop:20,
     },
     listContainer:{
-        borderWidth:1,
         borderColor:"#8ab6d6",
-        
+        borderStyle:"dashed",
+        paddingVertical: 10,
+        paddingLeft: 25,
+        borderStyle: "dashed",
+        borderRadius: 3,
+        borderWidth: 2,
+        marginBottom:10,
     }
 });
 
