@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native
 
 const InputContainer = props => {
     const addTodo = () => {
-        props.setLists([...props.lists,props.inputData]);
+        props.setLists([...props.lists, props.inputData]);
         props.setInputData("")
     } 
     return(

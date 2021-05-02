@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, ScrollView , Text, TouchableOpacity,FlatList} from "react-native";
+import uuid from 'react-native-uuid';
 
-const ListItem = props => (
+const ListItem = props => {
+    return(
     <ScrollView  style={styles.container}>
         {
             props.lists.map(item => (
-                <TouchableOpacity style={styles.listContainer} key={Math.random()}>
-                    <Text>{item.list}</Text>
+                <TouchableOpacity style={styles.listContainer} key={uuid.v4()}>
+                    <Text>{item}</Text>
                 </TouchableOpacity>
             ))
         }
 
     </ScrollView>
-)
+)}
 
 const styles = StyleSheet.create({
     container: {
