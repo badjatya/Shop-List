@@ -5,9 +5,10 @@ const InputContainer = props => (
     <View style={styles.inputContainer}>
         <TextInput value={props.inputData} style={styles.textInput} placeholder="Enter Item..." onChangeText={(item) => props.setInputData(item)} />
 
-        <TouchableOpacity style={styles.buttonContainer}>
+        <TouchableOpacity onPress={() => props.setLists([...props.lists,props.inputData])} style={styles.buttonContainer}>
             <Text style={styles.textButton}>+</Text>
         </TouchableOpacity>
+        {console.log(props.lists)}
     </View>
 )
 
