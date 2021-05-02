@@ -6,6 +6,7 @@ import ListItem from "./components/listItem.component";
 
 export default function App() {
   const [inputData, setInputData] = useState("");
+  const [lists, setLists] = useState();
 
   return (
     <View style={styles.container}>
