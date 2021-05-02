@@ -17,7 +17,7 @@ export default function App() {
         lists={lists}
         setLists={setLists}
       />
-      <ListItem />
+      <ListItem lists={lists} />
     </View>
   );
 }
