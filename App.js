@@ -11,7 +11,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Header />
-      <InputContainer inputData={inputData} setInputData={setInputData} />
+      <InputContainer
+        inputData={inputData}
+        setInputData={setInputData}
+        lists={lists}
+        setLists={setLists}
+      />
       <ListItem />
     </View>
   );
