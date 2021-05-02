@@ -10,7 +10,6 @@ const InputContainer = props => (
         style={styles.buttonContainer}>
             <Text style={styles.textButton}>+</Text>
         </TouchableOpacity>
-        {console.log(props.lists)}
     </View>
 )
 
