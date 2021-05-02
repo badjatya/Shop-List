@@ -3,11 +3,16 @@ import { StyleSheet, ScrollView , Text, TouchableOpacity,FlatList} from "react-n
 import uuid from 'react-native-uuid';
 
 const ListItem = props => {
+    const deleteTodo = index => {
+        let itemsCopy = [...props.lists]
+        itemsCopy.splice(index, 1);
+        props.setLists(itemsCopy)
+    }
     return(
     <ScrollView  style={styles.container}>
         {
             props.lists.map(item => (
-                <TouchableOpacity style={styles.listContainer} key={uuid.v4()}>
+                <TouchableOpacity style={styles.listContainer} key={uuid.v4()} onPress={() => deleteTodo(key)}>
                     <Text>{item}</Text>
                 </TouchableOpacity>
             ))
