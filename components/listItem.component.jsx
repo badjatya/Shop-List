@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, ScrollView , Text, TouchableOpacity} from "react-native";
+import { StyleSheet, ScrollView , Text, TouchableOpacity,FlatList} from "react-native";
 
 const ListItem = props => (
     <ScrollView  style={styles.container}>
@@ -10,6 +10,7 @@ const ListItem = props => (
                 </TouchableOpacity>
             ))
         }
+
     </ScrollView>
 )
 
