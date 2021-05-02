@@ -3,9 +3,11 @@ import { StyleSheet, View , Text, TouchableOpacity} from "react-native";
 
 const ListItem = props => (
     <View style={styles.container}>
-        <Text>HII</Text>
-        <Text>HII</Text>
-        <Text>HII</Text>
+        {
+            props.lists.map(item => (
+                <Text key={Math.random()}>{item}</Text>
+            ))
+        }
     </View>
 )
 
